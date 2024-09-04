@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial;
+        background-color: #d14836;
+        line-height: 20px;
+      }
+      #top {
+        color: white;
+        padding: 15px;
+        font-size: 30px;
+        line-height: 25px;
+      }
+
+      .container {
+        min-width: 900px;
+      }
+      .wrapper {
+        position: relative;
+        overflow: auto;
+      }
+      #main {
+        background-color: white;
+        padding: 10px;
+      }
+      #main h1,
+      main h2 {
+        color: #d14836;
+      }
+      #menubar {
+        width: 200px;
+        float: right;
+      }
+      #sidebar {
+        background-color: #f6dad7;
+        color: #d14836;
+        padding: 10px;
+      }
+      #bottom {
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+      }
+      #menulist {
+        margin: 0;
+        padding: 5px;
+      }
+      .menuitem {
+        width: 150px;
+        margin: 10px;
+        padding: 5px;
+        border: 1px solid #d14836;
+        border-radius: 20px;
+        background-color: #d14836;
+        text-align: center;
+        color: white;
+        list-style-type: none;
+        padding: 7px;
+        cursor: pointer;
+        margin: 4px;
+        font-size: 17px;
+      }
+      .menuitem:hover {
+        background-color: white;
+        color: #d14836;
+      }
+      .menuitem:nth-child(2) {
+        background-color: white;
+        color: #d14836;
+        font-weight: bold;
+      }
+      @media (max-width: 800px) {
+        #sidebar {
+          width: auto;
+          position: relative;
+        }
+        #main {
+          margin-right: 0;
+        }
+      }
+      a:link {
+        color: #d14836;
+        text-decoration: underline;
+      }
+      a:hover {
+        color: #d14836;
+        text-decoration: none;
+      }
+      a:active {
+        color: #d14836;
+        text-decoration: none;
+      }
+      a:visited {
+        color: #d14836;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="top">
+        <h1>Welcome to my Homepage</h1>
+        <p>Use the menu to select different stylesheets</p>
+      </div>
+      <div class="wrapper">
+        <div id="menubar">
+          <ul id="menulist">
+            <li class="menuitem">Stylesheet 1</li>
+            <li class="menuitem">Stylesheet 2</li>
+            <li class="menuitem">Stylesheet 3</li>
+            <li class="menuitem">Stylesheet 4</li>
+            <li class="menuitem">No Stylesheet</li>
+          </ul>
+        </div>
+        <div id="main">
+          <h1>Same Page Different Stylesheets</h1>
+          <p>
+            This is a demonstration of how different stylesheets can change the
+            layout of your HTML page. You can change the layout of this page by
+            selecting different stylesheets in the menu, or by selecting one of
+            the following links: <a href="style1.htm">Stylesheet1</a>,
+            <a href="style2.htm">Stylesheet2</a>, Stylesheet3, Stylesheet4.
+          </p>
+          <h1>No Styles</h1>
+          <p>
+            This page uses DIV elements to group different sections of the HTML
+            page. Click here to see how the page looks like with no stylesheet:
+            No Stylesheet.
+          </p>
+        </div>
+        <div id="sidebar">
+          <h3>Side-Bar</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat.
+          </p>
+        </div>
+      </div>
+      <div id="bottom">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+        molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+        eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+        zzril delenit augue duis dolore te feugait nulla facilisi.
+      </div>
+    </div>
+  </body>
+</html>
