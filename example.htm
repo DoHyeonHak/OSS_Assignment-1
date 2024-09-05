@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #222529;
+        color: white;
+        font: 100% Arial, sans-serif;
+      }
+      .container {
+        max-width: 600px;
+        min-width: 300px;
+        margin: 0 auto;
+        text-align: center;
+        height: 100vh;
+        padding: 0 20px;
+      }
+      .wrapper {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      #top {
+        /*
+        display: flex는 수직, 수평 설정의 자율성을 제공한다.
+        justify-content를 통해 top의 두 요소 h3, nav 사이에 공백을 두고 양측으로 이동하게 만들었다.
+        */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #top h3 {
+        margin-top: 10px;
+        font-size: 30px;
+      }
+      #top nav ul {
+        margin-top: 10px;
+        display: flex;
+      }
+
+      .menu {
+        color: gray;
+        margin-left: 20px;
+        cursor: pointer;
+        list-style: none;
+      }
+      .menu:first-child {
+        color: white;
+      }
+
+      #main {
+        font-size: 150%;
+        margin: 100px auto;
+        padding: 5px;
+        text-align: center;
+        max-width: 100%;
+        min-width: 250px;
+      }
+      #main h2 {
+        font-size: 40px;
+
+        line-height: 1.5;
+      }
+      #main p {
+        font-size: 80%;
+        line-height: 1.5;
+        margin: 20px 0;
+      }
+
+      .button {
+        width: 110px;
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 10px;
+        margin: auto;
+        padding: 15px;
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      #bottom {
+        color: gray;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+      }
+      #bottom a {
+        color: white;
+        text-decoration: underline;
+      }
+      @media (max-width: 800px) {
+        #top {
+          flex-direction: column;
+        }
+        #top nav ul {
+          justify-content: center;
+          padding-left: 0;
+        }
+        #main {
+          margin: 50px auto;
+        }
+      }
+      @media (max-height: 400px) {
+        #main {
+          min-height: 400px;
+        }
+        #bottom {
+          color: gray;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          padding: 10px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="top">
+        <h3>Cover</h3>
+        <nav>
+          <ul class="list">
+            <li class="menu">Home</li>
+            <li class="menu">Feature</li>
+            <li class="menu">Contact</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrapper">
+        <div id="main">
+          <h2>Cover your page.</h2>
+          <p>
+            Cover is a one-page template for building simple and beautiful home
+            pages. Download, edit the text, and add your own fullscreen
+            background photo to make it your own.
+          </p>
+          <ul class="button">
+            Learn more
+          </ul>
+        </div>
+      </div>
+      <div id="bottom">
+        <p>
+          Cover template for <a href="example.htm">Bootstrap</a>, by
+          <a href="example.htm">@mdo</a>.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
