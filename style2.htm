@@ -16,6 +16,10 @@
         font-size: 30px;
         line-height: 25px;
       }
+      #top h1{
+        margin: 0px;
+        line-height: 55px;
+      }
 
       /*
       .container {
@@ -29,13 +33,14 @@
       #main {
         background-color: white;
         padding: 10px;
+        font: 80% Verdana;
       }
-      #main h1,
-      main h2 {
+      #main h1, h2 {
         color: #d14836;
+        line-height: 30px;
       }
       #menubar {
-        width: 200px;
+        width: 190px;
         float: right;
       }
       #sidebar {
@@ -47,14 +52,15 @@
         color: white;
         text-align: center;
         padding: 10px;
-        font-size: 12px;
+        font-size: 70%;
       }
       #menulist {
-        margin: 0;
+        margin: 0px;
         padding: 5px;
+        font: 16px verdana;
       }
       .menuitem {
-        width: 150px;
+        width: 155px;
         margin: 10px;
         padding: 5px;
         border: 1px solid #d14836;
@@ -63,10 +69,7 @@
         text-align: center;
         color: white;
         list-style-type: none;
-        padding: 7px;
         cursor: pointer;
-        margin: 4px;
-        font-size: 17px;
       }
       .menuitem:hover {
         background-color: white;
@@ -108,16 +111,16 @@
     <div class="container">
       <div id="top">
         <h1>Welcome to HyeonHak's Homepage (22300248)</h1>
-        <p>Use the menu to select different stylesheets</p>
+        <p>Use the menu to select different Stylesheets</p>
       </div>
       <div class="wrapper">
         <div id="menubar">
           <ul id="menulist">
-            <li class="menuitem">Stylesheet 1</li>
-            <li class="menuitem">Stylesheet 2</li>
+            <li class="menuitem" onclick="window.location.href='style1.htm'">Stylesheet 1</li>
+            <li class="menuitem" onclick="window.location.href='style2.htm'">Stylesheet 2</li>
             <li class="menuitem">Stylesheet 3</li>
             <li class="menuitem">Stylesheet 4</li>
-            <li class="menuitem">No Stylesheet</li>
+            <li class="menuitem" onclick="window.location.href='index.htm'">No Stylesheet</li>
           </ul>
         </div>
         <div id="main">
@@ -126,10 +129,13 @@
             This is a demonstration of how different stylesheets can change the
             layout of your HTML page. You can change the layout of this page by
             selecting different stylesheets in the menu, or by selecting one of
-            the following links: <a href="style1.htm">Stylesheet1</a>,
-            <a href="style2.htm">Stylesheet2</a>, Stylesheet3, Stylesheet4.
+            the following links: 
+            <br>
+              <a href="style1.htm">Stylesheet1</a>,
+              <a href="style2.htm">Stylesheet2</a>, Stylesheet3, Stylesheet4.
+            </br>
           </p>
-          <h1>No Styles</h1>
+          <h2>No Styles</h2>
           <p>
             This page uses DIV elements to group different sections of the HTML
             page. Click here to see how the page looks like with no stylesheet:
