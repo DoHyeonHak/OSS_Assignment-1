@@ -4,10 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
     <style>
       body {
         background-color: #222529;
@@ -15,8 +11,7 @@
         font: 100% Arial, sans-serif;
       }
       .container {
-        max-width: 600px;
-        min-width: 300px;
+        max-width: 650px;
         margin: 0 auto;
         text-align: center;
         height: 100vh;
@@ -30,23 +25,21 @@
         text-align: center;
       }
       #top {
-        /*
-        display: flex는 수직, 수평 설정의 자율성을 제공한다.
-        justify-content를 통해 top의 두 요소 h3, nav 사이에 공백을 두고 양측으로 이동하게 만들었다.
-        */
         display: flex;
         justify-content: space-between;
         align-items: center;
       }
       #top h3 {
+        font-weight: lighter;
         margin-top: 10px;
-        font-size: 30px;
+        font-size: 28px;
+        margin-bottom: 0px;
       }
       #top nav ul {
+        font-weight: bolder;
         margin-top: 10px;
         display: flex;
       }
-
       .menu {
         color: gray;
         margin-left: 20px;
@@ -59,18 +52,30 @@
 
       #main {
         font-size: 150%;
+        font-weight: bolder;
         margin: 100px auto;
         padding: 5px;
         text-align: center;
         max-width: 100%;
         min-width: 250px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        max-width: 600px;
+        max-height: 300px;
+        margin: auto;
+        min-height: 280px;
       }
       #main h2 {
-        font-size: 40px;
-
-        line-height: 1.5;
+        font-weight: lighter;
+        font-size: 35px;
+        margin-top: 50px;
+        margin-bottom: -15px;
       }
       #main p {
+        font-weight: lighter;
         font-size: 80%;
         line-height: 1.5;
         margin: 20px 0;
@@ -83,23 +88,21 @@
         border: none;
         border-radius: 10px;
         margin: auto;
-        padding: 15px;
+        padding: 13px;
         font-weight: bold;
         font-size: 20px;
         cursor: pointer;
       }
-      #bottom {
-        color: gray;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        display: flex;
-        justify-content: center;
-      }
       #bottom a {
         color: white;
         text-decoration: underline;
+      }
+      #bottom {
+        color: gray;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
       }
       @media (max-width: 800px) {
         #top {
@@ -109,20 +112,14 @@
           justify-content: center;
           padding-left: 0;
         }
-        #main {
-          margin: 50px auto;
-        }
       }
       @media (max-height: 400px) {
         #main {
-          min-height: 400px;
+          margin: 50px auto;
+          overflow: auto;
         }
         #bottom {
-          color: gray;
-          position: relative;
-          display: flex;
-          justify-content: center;
-          padding: 10px 0;
+          margin: auto;
         }
       }
     </style>
@@ -133,9 +130,9 @@
         <h3>Cover</h3>
         <nav>
           <ul class="list">
-            <li class="menu">Home</li>
-            <li class="menu">Feature</li>
-            <li class="menu">Contact</li>
+            <li class="menu" href="#">Home</li>
+            <li class="menu" href="#">Features</li>
+            <li class="menu" href="#">Contact</li>
           </ul>
         </nav>
       </div>
